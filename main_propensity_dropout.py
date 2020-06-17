@@ -139,7 +139,7 @@ def main_propensity_dropout_BL():
     print(device)
     MSE_list = []
     MSE_set = []
-    for iter_id in range(1):
+    for iter_id in range(100):
         iter_id += 1
         print("--" * 20)
         print("iter_id: {0}".format(iter_id))
