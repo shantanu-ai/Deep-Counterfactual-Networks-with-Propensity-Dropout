@@ -14,7 +14,7 @@ def train_eval_DCN(iter_id, np_covariates_X_train, np_covariates_Y_train, dL, de
     # test set -> np_covariates_Y_train, np_covariates
     # train propensity network
     train_parameters = {
-        "epochs": 200,
+        "epochs": 50,
         "lr": 0.001,
         "batch_size": 32,
         "shuffle": True,
@@ -28,7 +28,7 @@ def train_eval_DCN(iter_id, np_covariates_X_train, np_covariates_Y_train, dL, de
     # eval propensity network
     eval_parameters = {
         "eval_set": ps_train_set,
-        "model_path": "./Propensity_Model/NN_PS_model_iter_id_{0}_epoch_200_lr_0.001.pth".format(iter_id)
+        "model_path": "./Propensity_Model/NN_PS_model_iter_id_{0}_epoch_50_lr_0.001.pth".format(iter_id)
     }
     ps_score_list = ps_net.eval(eval_parameters, device, phase="eval")
 
@@ -54,8 +54,8 @@ def train_eval_DCN(iter_id, np_covariates_X_train, np_covariates_Y_train, dL, de
                                               np_control_df_Y_f, np_control_df_Y_cf)
 
     DCN_train_parameters = {
-        "epochs": 500,
-        "lr": 0.001,
+        "epochs": 100,
+        "lr": 0.0001,
         "treated_batch_size": 1,
         "control_batch_size": 1,
         "shuffle": True,
@@ -74,7 +74,7 @@ def test_DCN(iter_id, np_covariates_X_test, np_covariates_Y_test, dL, device):
     ps_net = Propensity_socre_network()
     ps_eval_parameters = {
         "eval_set": ps_test_set,
-        "model_path": "./Propensity_Model/NN_PS_model_iter_id_{0}_epoch_200_lr_0.001.pth".format(iter_id)
+        "model_path": "./Propensity_Model/NN_PS_model_iter_id_{0}_epoch_50_lr_0.001.pth".format(iter_id)
     }
     ps_score_list = ps_net.eval(ps_eval_parameters, device, phase="eval")
     pd.DataFrame.from_dict(
@@ -106,7 +106,7 @@ def test_DCN(iter_id, np_covariates_X_test, np_covariates_Y_test, dL, device):
     DCN_test_parameters = {
         "treated_set": tensor_treated,
         "control_set": tensor_control,
-        "model_save_path": "./DCNModel/NN_DCN_model_iter_id_{0}_epoch_500_lr_0.001.pth".format(iter_id)
+        "model_save_path": "./DCNModel/NN_DCN_model_iter_id_{0}_epoch_100_lr_0.0001.pth".format(iter_id)
     }
 
     dcn = DCN_network()
@@ -139,7 +139,7 @@ def main_propensity_dropout_BL():
     print(device)
     MSE_list = []
     MSE_set = []
-    for iter_id in range(100):
+    for iter_id in range(1):
         iter_id += 1
         print("--" * 20)
         print("iter_id: {0}".format(iter_id))

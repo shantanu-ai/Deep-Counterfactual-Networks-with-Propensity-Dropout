@@ -120,13 +120,16 @@ class DCN_network:
 
             print("epoch: {0}, train_set_size: {1} loss: {2}".
                   format(epoch, train_set_size, total_loss))
+
             if epoch % 2 == 1:
                 print("Treated + Control loss: {0}".format(dataset_loss))
-                if dataset_loss < min_loss:
-                    print("Current loss: {0}, over previous: {1}, Saving model".
-                          format(dataset_loss, min_loss))
-                    min_loss = dataset_loss
-                    torch.save(network.state_dict(), model_save_path)
+                # if dataset_loss < min_loss:
+                #     print("Current loss: {0}, over previous: {1}, Saving model".
+                #           format(dataset_loss, min_loss))
+                #     min_loss = dataset_loss
+                #     torch.save(network.state_dict(), model_save_path)
+
+        torch.save(network.state_dict(), model_save_path)
 
     @staticmethod
     def eval(eval_parameters, device):
