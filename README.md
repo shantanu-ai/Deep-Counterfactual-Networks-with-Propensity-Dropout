@@ -38,7 +38,7 @@ command:
   DCN
 </li>
   Epochs: 100<br/>
-  Learning rate: 0.0001,<br/>
+  Learning rate: 0.0001<br/>
 </ul>
 
 ## Result
