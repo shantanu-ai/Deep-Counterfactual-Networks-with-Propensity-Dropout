@@ -1,5 +1,5 @@
 # Introduction:
-This project is the implementation of the paper: <b>"Deep Counterfactual Networks with Propensity-Dropout"(https://arxiv.org/pdf/1706.05966.pdf)</b>  [[arXiv]](https://arxiv.org/pdf/1706.05966.pdf) in pytorch. <br/>
+This project is the implementation of the paper: <b>"Deep Counterfactual Networks with Propensity-Dropout"</b>  [[arXiv]](https://arxiv.org/pdf/1706.05966.pdf) in pytorch. <br/>
 Ahmed M. Alaa, Michael Weisz, Mihaela van der Schaar 
 # Dataset:
 IHDP dataset will be found in the folder: ["./Dataset"](https://github.com/Shantanu48114860/Deep-Counterfactual-Networks-with-Propensity-Dropout/tree/master/Dataset)
