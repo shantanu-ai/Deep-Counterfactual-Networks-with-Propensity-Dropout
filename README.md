@@ -41,6 +41,8 @@ command:
   Learning rate: 0.0001,<br/>
 </ul>
 
+## Result
+
 ## Contact
 beingshantanu2406@gmail.com <br/>
 shantanu.ghosh@ufl.edu
