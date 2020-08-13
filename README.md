@@ -9,6 +9,9 @@ IHDP dataset will be found in the folder: ["./Dataset"](https://github.com/Shant
 <pre>                                     <i> • Ahmed M. Alaa • Michael Weisz • Mihaela van der Schaar</i></pre>
 
 
+## Architecture
+<img src="https://github.com/Shantanu48114860/Deep-Counterfactual-Networks-with-Propensity-Dropout/blob/master/Screen%20Shot%202020-08-13%20at%202.14.36%20AM.png" width="250" height="300">
+
 ## Developer
 [Shantanu Ghosh](https://www.linkedin.com/in/shantanu-ghosh-b369783a/)
 
