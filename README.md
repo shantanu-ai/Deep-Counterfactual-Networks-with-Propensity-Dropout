@@ -24,8 +24,14 @@ command:
 <b>python3 main_propensity_dropout.py</b>
 
 # Hyperparameters:
-<li>Propensity Network
+<ul>
+<li>
+  Propensity Network
 </li>
+  Epochs: 50
+  Learning rate: 0.001
+  Batch size: 32
+</ul>
 
 ## Contact
 beingshantanu2406@gmail.com <br/>
