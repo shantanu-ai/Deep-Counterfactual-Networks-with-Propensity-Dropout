@@ -28,9 +28,17 @@ command:
 <li>
   Propensity Network
 </li>
-  Epochs: 50
-  Learning rate: 0.001
-  Batch size: 32
+  Epochs: 50<br/>
+  Learning rate: 0.001<br/>
+  Batch size: 32<br/>
+</ul>
+
+<ul>
+<li>
+  DCN
+</li>
+  Epochs: 100<br/>
+  Learning rate: 0.0001,<br/>
 </ul>
 
 ## Contact
