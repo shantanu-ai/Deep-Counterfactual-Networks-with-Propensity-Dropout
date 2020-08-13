@@ -27,11 +27,11 @@ command:
 <b>python3 main_propensity_dropout.py</b>
 
 # Hyperparameters:
-Epochs(DTD): 400<br/>
-Epochs(kth): 400<br/>
-Learning rate: 0.0001<br/>
-Batch size: 32<br/>
-Weight Decay: 0.0005<br/>
+<li>
+  <ul>
+    Propensity Network
+  </ul>
+</li>
 
 ## Report
 The report of this research is kept at the following [location](https://github.com/Shantanu48114860/MTL-TCNN3/blob/master/Report/Texture_Classification.pdf).
